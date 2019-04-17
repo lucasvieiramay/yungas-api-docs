@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yungas SaaS Api Documentation</title>
+    
+<link href="./css/combined.css" rel="stylesheet">
+<script type="text/javascript" src="./js/combined.js"></script>
+     
+</head>
+<body>
+    <div class="jumbotron">
+    <div class="container">
+        <h1>Yungas SaaS Api Documentation</h1><p>
+        A sample doc for Yungas SaaS API. Every request must ne authenticated by Bearer token on header.
+        </p></div>
+</div><div id="help-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3>Keyboard Shortcuts</h3>
+            </div>
+            <div class="modal-body">
+                <div class="help_row">
+                    <h4>Site wide shortcuts</h4>
+                    <dl class="keyboard-mappings">
+                        <dt>?</dt>
+                        <dd>Bring up this help dialog</dd>
+                    </dl>
+                    <dl class="keyboard-mappings">
+                        <dt>esc</dt>
+                        <dd>Hide this help dialog</dd>
+                    </dl>
+                    <dl class="keyboard-mappings">
+                        <dt>/</dt>
+                        <dd>Focus search bar</dd>
+                    </dl>
+                </div>
+                <div class="help_row">
+                    <h4>Navigation</h4>
+                    <dl class="keyboard-mappings">
+                        <dt>j <em>or</em> n</dt>
+                        <dd>Move to next method or type</dd>
+                    </dl>
+                    <dl class="keyboard-mappings">
+                        <dt>k <em>or</em> p</dt>
+                        <dd>Move to previous method or type</dd>
+                    </dl>
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div><div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="doc-sidebar"><input type="search" placeholder="search" class="col-md-12 form-control">
+<div class="scroll-spyable">
+    <ul class="nav nav-list doc-sidenav">
+        <li class="nav-header"><h5>Methods</h5></li><li class="nav-header" data-group="Authentication"><a href="javascript:navigateTo({category: 'Authentication'}, ['category', 'method', 'type'])" data-target="#c-Authentication"><h6>Authentication</h6></a></li>
+        <li data-group="Authentication"  data-item="Authentication"><a href="javascript:navigateTo({category: 'Authentication', method: 'Authentication'}, ['category', 'method'])" data-target="#m-Authentication"><span>Authentication</span></a></li>
+        <li class="separator"></li><li class="nav-header" data-group="Finances"><a href="javascript:navigateTo({category: 'Finances'}, ['category', 'method', 'type'])" data-target="#c-Finances"><h6>Finances</h6></a></li>
+        <li data-group="Finances"  data-item="RevenueAdd"><a href="javascript:navigateTo({category: 'Finances', method: 'FinancesInput'}, ['category', 'method'])" data-target="#m-FinancesInput"><span>RevenueAdd</span></a></li>
+        <li class="separator"></li><li class="nav-header" data-group="Franchise"><a href="javascript:navigateTo({category: 'Franchise'}, ['category', 'method', 'type'])" data-target="#c-Franchise"><h6>Franchise</h6></a></li>
+        <li data-group="Franchise"  data-item="Get"><a href="javascript:navigateTo({category: 'Franchise', method: 'FranchiseDetail'}, ['category', 'method'])" data-target="#m-FranchiseDetail"><span>Get</span></a></li>
+        <li class="separator"></li><li class="nav-header" data-group="Franchisor"><a href="javascript:navigateTo({category: 'Franchisor'}, ['category', 'method', 'type'])" data-target="#c-Franchisor"><h6>Franchisor</h6></a></li>
+        <li data-group="Franchisor"  data-item="Get"><a href="javascript:navigateTo({category: 'Franchisor', method: 'FranchisorDetail'}, ['category', 'method'])" data-target="#m-FranchisorDetail"><span>Get</span></a></li>
+    </ul>
+    <ul class="nav nav-list doc-sidenav">
+        <li class="nav-header"><h5>Types</h5></li>
+        <li data-group="None" data-item="Franchise"><a href="javascript:navigateTo({category: 'None', type: 'Franchise'}, ['category', 'method'])" data-target="#t-Franchise"><span>Franchise</span></a></li>
+    </ul>
+</div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="item-head" class="item">
+                <h4></h4>
+                <div class="diff-header"></div>
+                <div class="stack">
+                    <h5>hello</h5>
+                </div>
+            </div>
+            <div class="page-header">
+                <h2>Methods</h2>
+            </div>
+            <ul class="list-unstyled">
+    <li class="category" id="c-Authentication"><h3>Authentication</h3>
+        <div class="description">Authentication for the Yungas Api</div>
+        <ul class="list-unstyled">
+            <li class="method item" id="m-Authentication" data-method="POST">
+                <h4>Authentication</h4><div class="nocontents">no implementation for this version</div>
+                <div class="contents">
+
+<h5 class="title"></h5>
+
+<div class="description stack">
+    
+    <div class="diff_version" data-version="v1.0">Given the user e-mail, password and apikey, returns a Bearer token valid for the next 5 minutes.</div></div><div class="request stack">
+    <h5><i class="i-request"></i> Request: </h5>
+    <h6>Resource: </h6>
+
+    <code  class="diff_version" data-version="v1.0"><span class="hur">https://app.yungas.com.br/api/authentication/</span></code>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"apikey"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">Number of the month that this revenue belongs (1-12)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"email"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of the franchise that you will add the revenue</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"password"</span><span class="pun">: </span><span class="typ">integer</span></td>
+        <td class="com">Number of the year that this revenue belongs (YYYY)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+</div>
+
+<div class="response stack">
+    <h5><i class="i-response"></i> Response: </h5>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="typ">string</span></td>
+        <td class="com">Bearer token valid for the next 5 minutes, if expires you must authenticate again.</td>
+    </tr>
+        </tbody>
+    </table></div>
+    <h6>Codes: </h6><table class="table table-bordered table-hover table-condensed">
+        <colgroup>
+            <col width="50px"></col>
+            <col></col>
+            <col width="50%"></col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th><span
+            >Code</span></th>
+            <th><span
+            >Message</span></th>
+            <th><span
+            >Description</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">401</span></td>
+            <td><span class="str">Authentication failed</span></td>
+            <td><span class="com">You must insert Bearer token on header Authentication</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div><div class="stack sample"><div data-version="v1.0">
+
+<h5><i class="i-sample"></i> Sample: </h5>
+<h6>Request: </h6>
+<div class="code"><span class="hme">POST</span> <span class="hur">authentication/</span> <span class="hpr">HTTP/1.1</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="pun">{
+</span>  <span class="str">"apikey"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"email"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"password"</span><span class="pun">: </span><span class="lit">42</span>
+<span class="pun">}</span></div>
+        <h6>Response: </h6>
+        <div class="code"><span class="hpr">HTTP/1.1</span> <span class="lit">200</span> <span class="str">OK</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="str">"my_response"</span></div></div></div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="category" id="c-Finances"><h3>Finances</h3>
+        <div class="description">Input revenue information for a specific franchise</div>
+        <ul class="list-unstyled">
+            <li class="method item" id="m-FinancesInput" data-method="POST">
+                <h4>RevenueAdd</h4><div class="nocontents">no implementation for this version</div>
+                <div class="contents">
+
+<h5 class="title"></h5>
+
+<div class="description stack">
+    
+    <div class="diff_version" data-version="v1.0">Input revenue infos for a specific franchise on a specific month and year</div></div><div class="request stack">
+    <h5><i class="i-request"></i> Request: </h5>
+    <h6>Resource: </h6>
+
+    <code  class="diff_version" data-version="v1.0"><span class="hur">https://app.yungas.com.br/api/finances/</span></code>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"franchise"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of the franchise that you will add the revenue</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"month"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">Number of the month that this revenue belongs (1-12)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"planned"</span><span class="pun">: </span><span class="typ">number</span><span class="pun">,</span></td>
+        <td class="com">Revenue expected for the following period | (10000.00) as Ten thousand.</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"revenue"</span><span class="pun">: </span><span class="typ">number</span><span class="pun">,</span></td>
+        <td class="com">Revenue value for the following period | (10000.00) as Ten thousand.</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"year"</span><span class="pun">: </span><span class="typ">integer</span></td>
+        <td class="com">Number of the year that this revenue belongs (YYYY)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+</div>
+
+<div class="response stack">
+    <h5><i class="i-response"></i> Response: </h5>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"created_by"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of the user that create the revenue</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"franchise"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of the franchise that you will add the revenue</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"franchisor"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of the franchisor</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"id"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">ID of revenue that you just created</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"month"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">Number of the month that this revenue belongs (1-12)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"planned_value"</span><span class="pun">: </span><span class="typ">number</span><span class="pun">,</span></td>
+        <td class="com">Revenue expected for the following period | (10000.00) as Ten thousand.</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"revenue_value"</span><span class="pun">: </span><span class="typ">number</span><span class="pun">,</span></td>
+        <td class="com">Revenue value for the following period | (10000.00) as Ten thousand.</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"year"</span><span class="pun">: </span><span class="typ">integer</span></td>
+        <td class="com">Number of the year that this revenue belongs (YYYY)</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+    <h6>Codes: </h6><table class="table table-bordered table-hover table-condensed">
+        <colgroup>
+            <col width="50px"></col>
+            <col></col>
+            <col width="50%"></col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th><span
+            >Code</span></th>
+            <th><span
+            >Message</span></th>
+            <th><span
+            >Description</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">401</span></td>
+            <td><span class="str">Authentication failed</span></td>
+            <td><span class="com">You must insert Bearer token on header Authentication</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">404</span></td>
+            <td><span class="str">Franchise not found</span></td>
+            <td><span class="com">Franchise does not exists</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">422</span></td>
+            <td><span class="str">Missing parameter</span></td>
+            <td><span class="com">Missing one or more parameters</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div><div class="stack sample"><div data-version="v1.0">
+
+<h5><i class="i-sample"></i> Sample: </h5>
+<h6>Request: </h6>
+<div class="code"><span class="hme">POST</span> <span class="hur">finances/</span> <span class="hpr">HTTP/1.1</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="pun">{
+</span>  <span class="str">"franchise"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"month"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"planned"</span><span class="pun">: </span><span class="lit">13.37</span><span class="pun">,
+</span>  <span class="str">"revenue"</span><span class="pun">: </span><span class="lit">13.37</span><span class="pun">,
+</span>  <span class="str">"year"</span><span class="pun">: </span><span class="lit">42</span>
+<span class="pun">}</span></div>
+        <h6>Response: </h6>
+        <div class="code"><span class="hpr">HTTP/1.1</span> <span class="lit">200</span> <span class="str">OK</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="pun">{
+</span>  <span class="str">"created_by"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"franchise"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"franchisor"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"id"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"month"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"planned_value"</span><span class="pun">: </span><span class="lit">13.37</span><span class="pun">,
+</span>  <span class="str">"revenue_value"</span><span class="pun">: </span><span class="lit">13.37</span><span class="pun">,
+</span>  <span class="str">"year"</span><span class="pun">: </span><span class="lit">42</span>
+<span class="pun">}</span></div></div></div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="category" id="c-Franchise"><h3>Franchise</h3>
+        <div class="description">Returns data from a specific franchise</div>
+        <ul class="list-unstyled">
+            <li class="method item" id="m-FranchiseDetail" data-method="GET">
+                <h4>Get</h4><div class="nocontents">no implementation for this version</div>
+                <div class="contents">
+
+<h5 class="title"></h5>
+
+<div class="description stack">
+    
+    <div class="diff_version" data-version="v1.0">Returns the data from a specific franchise</div></div><div class="request stack">
+    <h5><i class="i-request"></i> Request: </h5>
+    <h6>Resource: </h6>
+
+    <code  class="diff_version" data-version="v1.0"><span class="hur">https://app.yungas.com.br/api//franchise/?id={franchise_id}</span></code>
+    <h6>URI Parameters: </h6><table class="table table-bordered table-hover table-condensed">
+        <colgroup>
+            <col></col>
+            <col width="160px"></col>
+            <col width="70px"></col>
+            <col width="50%"></col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th><span
+            >Parameter</span></th>
+            <th><span
+            >Type</span></th>
+            <th><span
+            >Optional</span></th>
+            <th><span
+            >Description</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="str">franchise_id</span></td>
+            <td><span class="typ">integer<td><span class="lit"></span></td>
+            <td><span class="com">Franchise id, you can obtain this id consulting on FranchisorDetail method</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="response stack">
+    <h5><i class="i-response"></i> Response: </h5>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"Franchise"</span><span class="pun">: </span><span class="typ"><a href="javascript:navigateTo({type: 'Franchise'}, ['category', 'method'])">Franchise</a></span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+    <h6>Codes: </h6><table class="table table-bordered table-hover table-condensed">
+        <colgroup>
+            <col width="50px"></col>
+            <col></col>
+            <col width="50%"></col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th><span
+            >Code</span></th>
+            <th><span
+            >Message</span></th>
+            <th><span
+            >Description</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">401</span></td>
+            <td><span class="str">Authentication failed</span></td>
+            <td><span class="com">You must insert Bearer token on headers</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">404</span></td>
+            <td><span class="str">Franchise not found</span></td>
+            <td><span class="com">Franchise does not exists</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">422</span></td>
+            <td><span class="str">Missing parameter</span></td>
+            <td><span class="com">You must insert the franchise_id on the get url</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div><div class="stack sample"><div data-version="v1.0">
+
+<h5><i class="i-sample"></i> Sample: </h5>
+<h6>Request: </h6>
+<div class="code"><span class="hme">GET</span> <span class="hur">/franchise/?id=42</span> <span class="hpr">HTTP/1.1</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+</div>
+        <h6>Response: </h6>
+        <div class="code"><span class="hpr">HTTP/1.1</span> <span class="lit">200</span> <span class="str">OK</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="pun">{
+</span>  <span class="str">"Franchise"</span><span class="pun">: </span><span class="pun">{
+</span>    <span class="str">"city"</span><span class="pun">: </span><span class="str">"my_city"</span><span class="pun">,
+</span>    <span class="str">"created_on"</span><span class="pun">: </span><span class="str">"my_created_on"</span><span class="pun">,
+</span>    <span class="str">"id"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>    <span class="str">"name"</span><span class="pun">: </span><span class="str">"my_name"</span>
+  <span class="pun">}</span>
+<span class="pun">}</span></div></div></div>
+                </div>
+            </li>
+        </ul>
+    </li>
+    <li class="category" id="c-Franchisor"><h3>Franchisor</h3>
+        <div class="description">Return the Franchisor info</div>
+        <ul class="list-unstyled">
+            <li class="method item" id="m-FranchisorDetail" data-method="POST">
+                <h4>Get</h4><div class="nocontents">no implementation for this version</div>
+                <div class="contents">
+
+<h5 class="title"></h5>
+
+<div class="description stack">
+    
+    <div class="diff_version" data-version="v1.0">Returns the franchisor data, inclusing all his franchises</div></div><div class="request stack">
+    <h5><i class="i-request"></i> Request: </h5>
+    <h6>Resource: </h6>
+
+    <code  class="diff_version" data-version="v1.0"><span class="hur">https://app.yungas.com.br/api//franchisor/</span></code>
+</div>
+
+<div class="response stack">
+    <h5><i class="i-response"></i> Response: </h5>
+    <h6>Body: </h6>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"Franchisor"</span><span class="pun">: </span><span class="pun">[</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>    <span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>      <span class="str">"id"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">Object identifier</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>      <span class="str">"name"</span><span class="pun">: </span><span class="typ">string</span></td>
+        <td class="com">Name of the object</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>    <span class="pun">}</span></td>
+        <td></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="pun">]</span></td>
+        <td></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+    <h6>Codes: </h6><table class="table table-bordered table-hover table-condensed">
+        <colgroup>
+            <col width="50px"></col>
+            <col></col>
+            <col width="50%"></col>
+        </colgroup>
+        <thead>
+            <tr>
+            <th><span
+            >Code</span></th>
+            <th><span
+            >Message</span></th>
+            <th><span
+            >Description</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">401</span></td>
+            <td><span class="str">Authentication failed</span></td>
+            <td><span class="com">You must insert Bearer token on headers</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">404</span></td>
+            <td><span class="str">Franchise not found</span></td>
+            <td><span class="com">Franchise does not exists</span></td>
+        </tr>
+        <tr class="diff_version " data-version="v1.0">
+            <td><span class="lit">422</span></td>
+            <td><span class="str">Missing parameter</span></td>
+            <td><span class="com">You must insert the franchise_id on the get url</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div><div class="stack sample"><div data-version="v1.0">
+
+<h5><i class="i-sample"></i> Sample: </h5>
+<h6>Request: </h6>
+<div class="code"><span class="hme">POST</span> <span class="hur">/franchisor/</span> <span class="hpr">HTTP/1.1</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+</div>
+        <h6>Response: </h6>
+        <div class="code"><span class="hpr">HTTP/1.1</span> <span class="lit">200</span> <span class="str">OK</span>
+<span class="hat">Content-Type</span><span class="pun">: </span><span class="hva">application/json; charset=utf-8</span>
+
+<span class="pun">{
+</span>  <span class="str">"Franchisor"</span><span class="pun">: </span><span class="pun">[
+</span>    <span class="pun">{
+</span>      <span class="str">"id"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>      <span class="str">"name"</span><span class="pun">: </span><span class="str">"my_name"</span>
+    <span class="pun">}</span><span class="pun">,
+</span>    <span class="pun">{
+</span>      <span class="str">"id"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>      <span class="str">"name"</span><span class="pun">: </span><span class="str">"my_name"</span>
+    <span class="pun">}</span>
+  <span class="pun">]</span>
+<span class="pun">}</span></div></div></div>
+                </div>
+            </li>
+        </ul>
+    </li>
+            </ul>
+            <div class="page-header">
+                <h2>Types</h2>
+            </div>
+            <ul class="list-unstyled">
+    <li class="category" id="c-None">
+        <ul class="list-unstyled">
+            <li class="type item" id="t-Franchise">
+                <h4>Franchise</h4><div class="nocontents">no implementation for this version</div>
+                <div class="contents">
+
+
+<div class="description stack">
+    
+    <div class="diff_version" data-version="v1.0">A franchise unit</div></div><div class="configuration stack">
+    <h5><i class="i-presentation"></i> Presentation: </h5>
+    <div class="code"><table class="table-hover">
+        <colgroup>
+            <col width="50%%"></col>
+            <col width="50%%"></col>
+        </colgroup>
+        <tbody>
+
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">{</span></td>
+        <td class="com"></td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"city"</span><span class="pun">: </span><span class="typ">string</span><span class="pun">,</span></td>
+        <td class="com">city address of the Franchise</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"created_on"</span><span class="pun">: </span><span class="typ">string</span><span class="pun">,</span></td>
+        <td class="com">Created on date of the franchise on isoformat</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"id"</span><span class="pun">: </span><span class="typ">integer</span><span class="pun">,</span></td>
+        <td class="com">Franchise identifier</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td>  <span class="str">"name"</span><span class="pun">: </span><span class="typ">string</span></td>
+        <td class="com">Name of the Franchise</td>
+    </tr>
+    <tr class="diff_version" data-version="v1.0">
+        <td><span class="pun">}</span></td>
+        <td></td>
+    </tr>
+        </tbody>
+    </table></div>
+
+
+</div><div class="stack sample"><div data-version="v1.0">
+
+<h5><i class="i-sample"></i> Formats: </h5>
+<h6>Sample: </h6>
+<div class="code"><span class="pun">{
+</span>  <span class="str">"city"</span><span class="pun">: </span><span class="str">"my_city"</span><span class="pun">,
+</span>  <span class="str">"created_on"</span><span class="pun">: </span><span class="str">"my_created_on"</span><span class="pun">,
+</span>  <span class="str">"id"</span><span class="pun">: </span><span class="lit">42</span><span class="pun">,
+</span>  <span class="str">"name"</span><span class="pun">: </span><span class="str">"my_name"</span>
+<span class="pun">}</span></div></div></div>
+                </div>
+            </li>
+        </ul>
+    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="btn-group">
+        <button class="btn btn-default i-previous" type="button"></button>
+        <button class="btn btn-default i-top" type="button"></button>
+        <button class="btn btn-default i-next" type="button"></button>
+    </div>
+</footer>
+
+</body>
+</html>
